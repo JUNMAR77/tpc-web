@@ -157,6 +157,15 @@ PRO TIP: You can combine the 2 previous commands into one command which is this 
 
 Migrations are super handy, but if you don't have one you simply import the sql file from your old database with your favorite database tools. This will create all your tables with your contents.
 
+11- If authentication is added, you need to call its dependencies
+
+    composer require laravel/ui 
+    
+and
+
+    php artisan ui vue --auth
+
+
 
 Conclusion
 

@@ -71,6 +71,8 @@
                             <li><a href="{{ route('library_services') }}">Library Services</a></li>
                         </ul>
                     </li>
+                    <li class="menu"><a href="#">Research and Extension</a>
+                    </li>
                     <li class="menu-has-children"><a href="">Alumni</a>
                         <ul>
                             <li><a href="#">Alumni Association</a></li>

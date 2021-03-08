@@ -33,8 +33,10 @@ class Article extends Model
         // '2' => 'Lower School',
         // '3' => 'Middle School',
         // '4' => 'High School'
-        '1' => 'Junior High',
-        '2' => 'Senior Hig',
+        '1' => 'First Year',
+        '2' => 'Second Year',
+        '3' => 'Third Year',
+        '4' => 'Fourth Year',
     ];
     const LEVEL_DESIGN = [
         '1' => 'bg-light-blue color-palette',

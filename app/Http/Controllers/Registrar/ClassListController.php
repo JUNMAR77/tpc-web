@@ -13,7 +13,7 @@ class ClassListController extends Controller
 
         $ClassDetail = \App\ClassDetail::join('section_details', 'section_details.id', '=' ,'class_details.section_id')
             ->join('rooms', 'rooms.id', '=' ,'class_details.room_id')
-            ->leftJoin('faculty_informations', 'faculty_informations.id', '=' ,'class_details.adviser_id')
+            ->leftJoin('faculty_informations', 'faculty_informations.id', '=' ,'class_details.faculty_id')
             ->join('school_years', 'school_years.id', '=' ,'class_details.school_year_id')
             ->selectRaw('
                 class_details.id,

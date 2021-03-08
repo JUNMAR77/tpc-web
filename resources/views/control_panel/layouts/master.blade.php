@@ -13,8 +13,8 @@
       <span class="logo-mini"><img src="{{ asset('/img/sja-logo.png') }}" style="height: 35px;"></span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">
-        {{-- <img src="{{ asset('/img/sja-logo.png') }}" style="height: 35px; margin: -5px 10px 0 -10px;"> <br/> --}}
-      <b>St. John</b> Academy</span>
+        {{-- <img src="{{ asset('/img/tpc-logo.png') }}" style="height: 35px; margin: -5px 10px 0 -10px;"> <br/> --}}
+      <b>Talibon</b> Polytechnic College</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -28,13 +28,13 @@
           <ul class="nav navbar-nav">
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    {{-- <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image"> --}}
-                    <span class="hidden-xs">{{ \Auth::user()->get_user_data()->first_name . ' ' . \Auth::user()->get_user_data()->last_name }}</span>
+                    <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                    {{-- <span class="hidden-xs">{{ \Auth::user()->get_user_data()->first_name . ' ' . \Auth::user()->get_user_data()->last_name }}</span> --}}
                 </a>
                 <ul class="dropdown-menu">
                     <!-- User image -->
                     <li class="user-header">
-                        <img src="{{ \Auth::user()->get_user_data()->photo ? \File::exists(public_path('/img/account/photo/'. \Auth::user()->get_user_data()->photo)) ? asset('/img/account/photo/'. \Auth::user()->get_user_data()->photo) : asset('/img/account/photo/blank-user.gif') : asset('/img/account/photo/blank-user.gif') }}" class="img-circle" alt="User Image">
+                      {{--}}  <img src="{{ \Auth::user()->get_user_data()->photo ? \File::exists(public_path('/img/account/photo/'. \Auth::user()->get_user_data()->photo)) ? asset('/img/account/photo/'. \Auth::user()->get_user_data()->photo) : asset('/img/account/photo/blank-user.gif') : asset('/img/account/photo/blank-user.gif') }}" class="img-circle" alt="User Image"> --}}
                         <p>
                           <small>{{ \Auth::user()->get_user_role_display() }}</small>
                         </p>
